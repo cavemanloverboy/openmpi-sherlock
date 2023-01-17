@@ -13,6 +13,6 @@ Once that is done, submit a SLURM job and use `srun python your_script.py` with 
 
 For an interactive job (e.g. for dev purposes) such as the one I used during my demo, fill out `N`, `T`, and `C`, `D-HH:MM:SS` here:
 ```
-salloc -p kipac --nodes=N --tasks-per-node=T --cpus-per-task --time=D-HH:MM:SS bash
+salloc -p kipac --nodes=N --tasks-per-node=T --cpus-per-task=C --time=D-HH:MM:SS bash
 ```
 and then use `srun python your_script.py` to use the allocation.
